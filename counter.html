@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <html lang="en">              
+<head>   
+  <meta charset="UTF-8">
+  <title>Hello, world!</title>                 
+  <meta name="viewport" content="width=device-width,initial-scale=1" />           
+  <meta name="description" content="" />  
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>     
+</head>
+<body>
+  <form>
+   <input type="button" onclick="incrementValue(1)" value="&#128009;" />
+    <input type="text" id="number" value="0"/>
+    <p>HIT IT!</p>
+
+    
+</form>
+  <script>
+    function incrementValue()
+    {
+        var value = parseInt(document.getElementById('number').value, 10);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        document.getElementById('number').value = value;
+    }
+</script>
+
+</html>
