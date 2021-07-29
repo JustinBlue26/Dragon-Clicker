@@ -3,27 +3,120 @@
   <html lang="en">              
 <head>   
   <meta charset="UTF-8">
-  <title>Hello, world!</title>                 
+  <title>Dragon Math</title>                 
   <meta name="viewport" content="width=device-width,initial-scale=1" />           
   <meta name="description" content="" />  
-  <link rel="stylesheet" type="text/css" href="css/style.css"/>     
+  <link rel="stylesheet" type="text/css" href="css/style.css"/> 
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet"> 
+  <script src="script.js" defer></script>   
 </head>
-<body>
-  <form>
-   <input type="button" onclick="incrementValue(1)" value="&#128009;" />
-    <input type="text" id="number" value="0"/>
-    <p>HIT IT!</p>
 
+
+
+<body>
+<header>
+  <h1>Dragon Arena</h1>
+  <h2>5 will enter...well...one at a time...and then leave before the next one enters. It's actually quite orderly and peaceful.</h2>
+</header>
+<nav>
+  <button class="fire firebutton" onclick="fireDragon.showDragon()">Fire Dragon</button>
+  <button class="ice icebutton" onclick="iceDragon.showDragon()">Ice Dragon</button>
+  <button class="sand sandbutton" onclick="sandDragon.showDragon()">Sand Dragon</button>
+  <button class="fog fogbutton" onclick="fogDragon.showDragon()">Fog Dragon</button>
+  <button class="run runbutton" onclick="runDragon.showDragon()">Run-of-the-Mill Dragon</button>
+</nav>
+
+</body>
+
+</html>
+
+<!--<div class="container">
+  <article class="flex-card2">
+    <img class="flex-img" src="http://www.jb26graphics.com/wp-content/uploads/2021/07/water.png" alt="fire dragon"  onclick="click2(1)" />
+    <div class="flex-text">
+      <h3 class="flex-title">Fire<br>Dragon</h3>
+      <p>HIT IT!<br><span id ="Clicker2">0</span></p>
+    </div>
     
-</form>
-  <script>
-    function incrementValue()
+  </article>
+
+<article class="flex-card1">
+  <img class="flex-img" src="http://www.jb26graphics.com/wp-content/uploads/2021/07/water.png" alt="water dragon" onclick="click1(1)" />
+  <div class="flex-text">
+    <h3 class="flex-title">Ice<br>Dragon</h3>
+    <p>HIT IT!<br><span id ="Clicker1">0</span></p>
+  </div>
+  
+</article>
+
+<article class="flex-card3">
+  <img class="flex-img" src="http://www.jb26graphics.com/wp-content/uploads/2021/07/water.png" alt="water dragon" onclick="click1(1)" />
+  <div class="flex-text">
+    <h1 class="flex-title">Sand<br>Dragon</h3>
+    <p>HIT IT!<br><span id ="Clicker1">0</span></p>
+  </div>
+  
+</article>
+
+<article class="flex-card4">
+  <img class="flex-img" src="http://www.jb26graphics.com/wp-content/uploads/2021/07/water.png" alt="fire dragon"  onclick="click2(1)" />
+  <div class="flex-text">
+    <h3 class="flex-title">Fog<br>Dragon</h3>
+    <p>HIT IT!<br><span id ="Clicker2">0</span></p>
+  </div>
+  
+</article>
+<article class="flex-card5">
+  <img class="flex-img" src="http://www.jb26graphics.com/wp-content/uploads/2021/07/water.png" alt="water dragon" onclick="click1(1)" />
+  <div class="flex-text">
+    <h3 class="flex-title">Run-Of-The-Mill<br>Dragon</h3>
+    <p>HIT IT!<br><span id ="Clicker1">0</span></p>
+  </div>
+  
+</article>
+
+</div>
+
+------------------------------------------ -->
+
+  <!--<script>
+
+
+
+    function incrementValue1()
     {
         var value = parseInt(document.getElementById('number').value, 10);
         value = isNaN(value) ? 0 : value;
         value++;
         document.getElementById('number').value = value;
     }
+
+    function incrementValue2()
+    {
+        var value = parseInt(document.getElementById('number').value, 10);
+        value = isNaN(value) ? 0 : value;
+        value++;
+        document.getElementById('number').value = value;
+    }
+
+
 </script>
 
-</html>
+var clickNumber1 = 0;
+var clickNumber2 = 0;
+
+function addToD1ClickNumber(amount) {
+  clickNumber1 = clickNumber1 + amount;
+  document.getElementById("d1ClickNumber").innerHTML = clickNumber1;
+  
+}
+
+function addToD2ClickNumber(amount) {
+  clickNumber2 = clickNumber2 + amount;
+  document.getElementById("d2ClickNumber").innerHTML = clickNumber2;
+  
+}-->
+
+
